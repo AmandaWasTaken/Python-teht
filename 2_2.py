@@ -1,10 +1,10 @@
+PI: float = 3.14159
 
 def main() -> None:
 
-    pi: float = 3.14159
     radius = input("Anna ympyrän säde ")
     radius = int(radius)
-    print(f"Ympyrän pinta-ala on {pi*radius*radius}")
+    print(f"Ympyrän PInta-ala on {PI*radius*radius}")
 
 if __name__ == '__main__':
     main()
