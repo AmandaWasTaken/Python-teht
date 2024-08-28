@@ -1,14 +1,16 @@
-from types import NoneType
+nums = list()
 
-nums = []
-
+number = input("Anna luku: ")
 while True:
-    number = input("Anna luku: ")
-    if number != '':
-        number = int(number)
-        nums.insert(number, int)
-    else:
+    if number == '':
         break
+    else:
+        number = int(number)
+        nums.insert(0, number)
+        number = input("Anna luku: ")
+        continue
 
+print("Viisi suurinta lukua: ")
+nums.sort(reverse=True)
 for i in range(5):
-    print(nums)
+    print(nums[i])
