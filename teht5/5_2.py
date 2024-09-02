@@ -10,7 +10,11 @@ while True:
         number = input("Anna luku: ")
         continue
 
-print("Viisi suurinta lukua: ")
+if len(nums) < 5:
+    print("Anna vähintään viisi lukua! ")
+    exit(1)
+
 nums.sort(reverse=True)
+print("Viisi suurinta lukua: ")
 for i in range(5):
     print(nums[i])
