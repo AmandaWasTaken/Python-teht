@@ -13,6 +13,8 @@ def main():
     radius2, price2 = [float(x) for x in input("Anna pizzan 2 halkaisija ja hinta ").split()]
     pizza1 = pizza_price_per_sqm(radius1, price1)
     pizza2 = pizza_price_per_sqm(radius2, price2)
+    print(f"Pizzan 1 hinta per m^2: {pizza1}")
+    print(f"Pizzan 2 hinta per m^2: {pizza2}")
     print("Pizza 1 on halvempi") if pizza1 < pizza2 else print("Pizza 2 on halvempi")
 
 if __name__ == '__main__':
