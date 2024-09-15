@@ -1,4 +1,4 @@
-vuodenajat = ("Kevät", "Kesä", "Syksy", "Talvi")
+seasons = ("Kevät", "Kesä", "Syksy", "Talvi")
 month = int(input("Anna kuukauden numero: "))
-print(vuodenajat[0]) if month == 1 else print(vuodenajat[month//4])
+print(seasons[0]) if month == 1 else print(seasons[month//4])
 
