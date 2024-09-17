@@ -14,13 +14,11 @@ def fetch_airport_info(icao) -> None:
            f'FROM airport '
            f'WHERE ident="{icao}"')
     index = conn.cursor()
-    print(sql)
     index.execute(sql)
     res = index.fetchall()
     if index.rowcount > 0:
         for line in res:
-            print(f"Lentokentän nimi: {line}")
-              # f"Sijaintikunta: {res[1]}")
+            print(f"{line}")
 
 
 def main() -> None:
