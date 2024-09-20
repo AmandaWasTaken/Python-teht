@@ -1,1 +1,1 @@
-school assignments, ignore this repo
+# school assignments, ignore this repo
