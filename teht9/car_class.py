@@ -8,11 +8,11 @@ class Car:
 
     def accelerate(self, speed_change: int) -> None:
         if self.current_speed + speed_change < 0:
-            print("Can't go slower than 0km/h ")
-            exit(1)
+            # print("Can't go slower than 0km/h ")
+            return
         if self.current_speed + speed_change > self.top_speed:
-            print(f"Can't go over the car's top speed ({self.top_speed}km/h)")
-            exit(1)
+            # print(f"Can't go over the car's top speed ({self.top_speed}km/h)")
+            return
         self.current_speed += speed_change
 
     def travel(self, hours: float) -> None:
